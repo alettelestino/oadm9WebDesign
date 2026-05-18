@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>alletl Photos</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            background:black;
+            color:white;
+        }
+
+        .sidebar{
+            width:90px;
+            height:100vh;
+            background:#000;
+            border-right:1px solid #222;
+            position:fixed;
+            text-align:center;
+            padding-top:30px;
+        }
+
+        .icon{
+            font-size:35px;
+            margin-bottom:45px;
+        }
+
+.main{
+    margin-left:90px;
+    padding:30px;
+}
+
+        .profile-section{
+            display:flex;
+            gap:50px;
+            align-items:center;
+            margin-bottom:40px;
+        }
+
+        .profile-pic{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid #333;
+        }
+
+        .profile-info h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .stats{
+            display:flex;
+            gap:30px;
+            margin-bottom:20px;
+            font-size:22px;
+        }
+
+        .details{
+            line-height:40px;
+            font-size:22px;
+        }
+
+        .buttons{
+            display:flex;
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .btn{
+            background:#262830;
+            border:none;
+            color:white;
+            padding:18px 40px;
+            border-radius:12px;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .highlights{
+            display:flex;
+            gap:30px;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+
+        .highlight{
+            text-align:center;
+        }
+
+        .highlight img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            border:4px solid #333;
+            margin-bottom:10px;
+        }
+
+        .tabs{
+            display:flex;
+            justify-content:center;
+            gap:120px;
+            border-top:1px solid #222;
+            padding-top:20px;
+            margin-bottom:30px;
+            font-size:20px;
+        }
+
+        .content{
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            gap:25px;
+        }
+
+.card{
+    background:#111;
+    border-radius:15px;
+    padding:25px;
+    line-height:45px;
+    height:320px;
+    overflow:auto;
+}
+
+        .card h2{
+            margin-bottom:15px;
+            color:#ff2fcf;
+        }
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+        .tab-btn{
+    background:#111;
+    color:white;
+    border:1px solid #333;
+    padding:12px 40px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.tab-btn:hover{
+    background:#262830;
+}
+
+.active{
+    background:#262830;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="icon">⌂</div>
+        <div class="icon">♡</div>
+        <div class="icon">✉</div>
+        <div class="icon">➕</div>
+        <div class="icon">☻</div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="profile-section">
+
+            <img src="cat.jpg"
+            class="profile-pic">
+
+            <div class="profile-info">
+
+                <h1>_alletl</h1>
+
+                <div class="stats">
+                    <div><b>207</b> posts</div>
+                    <div><b>802</b> followers</div>
+                    <div><b>1,040</b> following</div>
+                </div>
+
+                <div class="details">
+
+                    <b>Welcome Message:</b> Welcome to my profile! ✨<br>
+
+                    <b>Complete Name:</b> Alette Lestino<br>
+
+                    <b>Course and Year:</b> BS Computer Engineering<br>
+
+                    <b>Career Goal:</b> To become successful.
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="btn">Edit Profile</button>
+                    <a href="index.html" class="btn">Log-Out</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="highlights">
+            <div class="highlight"><img src="travel.jpg"><p>Travel</p></div>
+            <div class="highlight"><img src="school.png"><p>School</p></div>
+            <div class="highlight"><img src="tiger.png"><p>Friends</p></div>
+            <div class="highlight"><img src="coffee.png"><p>Hobbies</p></div>
+        </div>
+
+        </div>
+
+        <div class="tabs">
+
+            <a href="AboutMe.html" class="tab-btn">About ME</a>
+
+            <a href="Other.html" class="tab-btn">Other</a>
+
+            <a href="Resume.html" class="tab-btn">Resume</a>
+
+            <a href="OfficeAdministration.html" class="tab-btn">Office Administration</a>
+
+            <a href="Photos.html" class="tab-btn active">Photos</a>
+
+        </div>
+
+        <div class="content">

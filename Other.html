@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>alletl Other</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            background:black;
+            color:white;
+        }
+
+        .sidebar{
+            width:90px;
+            height:100vh;
+            background:#000;
+            border-right:1px solid #222;
+            position:fixed;
+            text-align:center;
+            padding-top:20px;
+        }
+
+        .icon{
+            font-size:38px;
+            margin-bottom:45px;
+        }
+
+.main{
+    margin-left:90px;
+    padding:30px;
+}
+
+        .profile-section{
+            display:flex;
+            gap:40px;
+            margin-bottom:40px;
+        }
+
+        .profile-pic{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            border:5px solid #333;
+        }
+
+        .profile-info h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .stats{
+            display:flex;
+            gap:40px;
+            margin-bottom:25px;
+            font-size:30px;
+        }
+
+        .details{
+            line-height:55px;
+            font-size:28px;
+        }
+
+        .buttons{
+            margin-top:30px;
+            display:flex;
+            gap:20px;
+        }
+
+        .btn{
+            background:#262830;
+            color:white;
+            border:none;
+            padding:18px 45px;
+            border-radius:12px;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .highlights{
+            display:flex;
+            gap:30px;
+            margin-top:40px;
+            margin-bottom:50px;
+        }
+
+        .highlight{
+            text-align:center;
+        }
+
+        .highlight img{
+            width:110px;
+            height:110px;
+            border-radius:50%;
+            border:4px solid #444;
+            margin-bottom:10px;
+        }
+
+        .highlight p{
+            font-size:22px;
+        }
+
+        .tabs{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            border-top:1px solid #222;
+            padding-top:20px;
+            margin-bottom:40px;
+        }
+
+        .tab-btn{
+            background:#111;
+            color:white;
+            border:1px solid #333;
+            padding:15px 45px;
+            border-radius:12px;
+            font-size:20px;
+        }
+
+        .active{
+            background:#262830;
+        }
+
+        .content{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:25px;
+        }
+
+.card{
+    background:#111;
+    border-radius:15px;
+    padding:25px;
+    line-height:45px;
+    height:320px;
+    overflow:auto;
+}
+
+        .card h2{
+            color:#ff1ebc;
+            margin-bottom:20px;
+            font-size:35px;
+        }
+
+        .card p{
+            font-size:24px;
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+            width:100%;
+            padding:15px;
+            margin-bottom:15px;
+            background:#000;
+            border:1px solid #444;
+            border-radius:8px;
+            color:white;
+            font-size:18px;
+        }
+
+        .contact-form textarea{
+            height:120px;
+        }
+
+        .send-btn{
+            width:100%;
+            padding:15px;
+            background:#ff1ebc;
+            border:none;
+            color:white;
+            border-radius:10px;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+        .social{
+            line-height:50px;
+            font-size:22px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="icon">⌂</div>
+        <div class="icon">▷</div>
+        <div class="icon">♡</div>
+        <div class="icon">✉</div>
+        <div class="icon">☻</div>
+        <div class="icon">☰</div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="profile-section">
+
+            <img src="cat.jpg"
+            class="profile-pic">
+
+            <div class="profile-info">
+
+                <h1>_alletl ⚙</h1>
+
+                <div class="stats">
+                    <div><b>207</b> posts</div>
+                    <div><b>802</b> followers</div>
+                    <div><b>1,040</b> following</div>
+                </div>
+
+                <div class="details">
+
+                    <b>Welcome Message:</b> Welcome to my profile! ✨<br>
+
+                    <b>Complete Name:</b> Alette Lestino<br>
+
+                    <b>Course and Year:</b> BS Computer Engineering<br>
+
+                    <b>Career Goal:</b> To become successful.
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="btn">Edit Profile</button>
+                    <a href="index.html" class="btn">Log-Out</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="highlights">
+            <div class="highlight"><img src="travel.jpg"><p>Travel</p></div>
+            <div class="highlight"><img src="school.png"><p>School</p></div>
+            <div class="highlight"><img src="tiger.png"><p>Friends</p></div>
+            <div class="highlight"><img src="coffee.png"><p>Hobbies</p></div>
+        </div>
+
+        <div class="tabs">
+
+            <a href="AboutMe.html" class="tab-btn">About ME</a>
+
+            <a href="Other.html" class="tab-btn active">Other</a>
+
+            <a href="Resume.html" class="tab-btn">Resume</a>
+
+            <a href="OfficeAdministration.html" class="tab-btn">Office Administration</a>
+
+            <a href="Photos.html" class="tab-btn">Photos</a>
+
+        </div>
+
+        <div class="content">
+
+            <div class="card">
+
+                <h2>Elementary School 🏫</h2>
+                <p>
+                    • Rosario Javier Moscoso Memorial School<br>
+                    • Batch 2012<br>
+                    • Active in class activities and achieved with honors.
+                </p>
+            </div>
+            <div class="card">
+                <h2>High School 📚</h2>
+                <p>
+                    • Antique National School<br>
+                    • Batch 2018<br>
+                    • Graduated with honors.
+                </p>
+            </div>
+            <div class="card">
+                <h2>College 🎓</h2>
+                <p>
+                    • St. ANthony's College<br>
+                    • BS Computer Science<br>
+                    • Dean’s Lister
+                </p>
+            </div>
+            <div class="card">
+                <h2>Graduate Studies 🎓</h2>
+                <p>
+                    • Iloilo Science and Technology University<br>
+                    • MS in COputer Science<br>
+                    • Major in Software Engineering<br>
+                </p>
+            </div>
+            <div class="card contact-form">
+                <h2>Contact Form ✉</h2>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button class="send-btn">
+                    Send Message
+                </button>
+
+            </div>
+            <div class="card">
+
+                <h2>Contact Information 📞</h2>
+                <div class="social">
+                    • Email: alletlestino@gmail.com<br>
+
+                    • Mobile: +63 977 287 5372<br>
+
+                    • Facebook: facebook.com/alletlestino<br>
+
+                    • Instagram: instagram.com/_alletl<br>
+
+                    • LinkedIn: linkedin.com/in/alletlestino
+                </div>
+            </div>
+            <div class="gallery">
+                <img src="ccis.png">
+            </div>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600&auto=format&fit=crop">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

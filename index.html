@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Login</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            background-color:#000;
+            color:white;
+        }
+
+        .container{
+            display:flex;
+            height:100vh;
+        }
+
+        .left{
+            width:55%;
+            background:black;
+            padding:50px;
+            border-right:1px solid #333;
+        }
+
+        .logo{
+            width:70px;
+            margin-bottom:40px;
+        }
+
+        .title{
+            font-size:60px;
+            line-height:80px;
+            margin-top:30px;
+        }
+
+        .friends{
+            color:#ff2fcf;
+        }
+
+        .images{
+            margin-top:50px;
+            position:relative;
+        }
+
+        .img1{
+            width:220px;
+            border-radius:30px;
+            position:absolute;
+            left:120px;
+            top:20px;
+        }
+
+        .img2{
+            width:220px;
+            border-radius:30px;
+            position:absolute;
+            left:250px;
+            top:0px;
+        }
+
+        .img3{
+            width:220px;
+            border-radius:30px;
+            position:absolute;
+            left:380px;
+            top:40px;
+        }
+
+        .right{
+            width:45%;
+            background:#121217;
+            padding:150px 80px;
+        }
+
+        .login-title{
+            font-size:20px;
+            margin-bottom:30px;
+            font-weight:bold;
+        }
+
+        input{
+            width:100%;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:18px;
+            border:1px solid #444;
+            background:#1b1b23;
+            color:white;
+            font-size:18px;
+        }
+
+.login-btn{
+    display:block;
+    width:100%;
+    padding:18px;
+    background:#174285;
+    border:none;
+    border-radius:30px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:30px;
+    text-align:center;
+    text-decoration:none;
+}
+
+        .forgot{
+            text-align:center;
+            margin-bottom:60px;
+            font-size:18px;
+        }
+
+        .facebook{
+            width:100%;
+            padding:18px;
+            background:transparent;
+            border:1px solid #444;
+            border-radius:30px;
+            color:white;
+            font-size:18px;
+            margin-bottom:20px;
+        }
+
+        .create{
+            display:block;
+            width:100%;
+            padding:18px;
+            text-align:center;
+            text-decoration:none;
+            background:transparent;
+            border:1px solid #1877f2;
+            border-radius:30px;
+            color:#1877f2;
+            font-size:18px;
+            font-weight:bold;
+            margin-bottom:40px;
+        }   
+        .meta{
+            text-align:center;
+            color:#ccc;
+            font-size:30px;
+        }
+
+        .footer{
+            background:#020814;
+            color:#ccc;
+            text-align:center;
+            padding:20px;
+            border-top:1px solid #444;
+        }
+
+        .footer a{
+            color:#ccc;
+            text-decoration:none;
+            margin:10px;
+            font-size:14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="logo">
+
+            <div class="title">
+                See everyday moments from your
+                <br>
+                <span class="friends">close friends.</span>
+            </div>
+
+            <div class="images">
+
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=500&auto=format&fit=crop" class="img1">
+
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=500&auto=format&fit=crop" class="img2">
+
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop" class="img3">
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="login-title">
+                Log into Instagram
+            </div>
+
+            <form>
+
+                <input type="text" placeholder="Mobile number, username or email">
+
+                <input type="password" placeholder="Password">
+
+                <a href="AboutMe.html" class="login-btn">Log in</a>
+                
+                <div class="forgot">
+                    Forgot password?
+                </div>
+
+                <button class="facebook">
+                    Log in with Facebook
+                </button>
+
+                <a href="NewAccount.html" class="create">Create new account</a>
+
+            </form>
+
+            <div class="meta">
+                Meta
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <a href="">Meta</a>
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Jobs</a>
+        <a href="">Help</a>
+        <a href="">API</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Locations</a>
+        <a href="">Instagram Lite</a>
+
+    </div>
+
+</body>
+</html>
